@@ -1,0 +1,94 @@
+/* client/src/pages/TodoPage.css */
+
+/* Page background and full-height container */
+.todo-page {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+/* Header with profile icon aligned to the right */
+.todo-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 32px;
+}
+
+/* Profile icon link styling */
+.profile-link {
+  font-size: 1.5rem;
+  color: #334e68;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  color: #102a43;
+}
+
+/* Temporary alert message styling */
+.alert {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffe58f;
+  color: #ad6800;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Main todo container centered on the page */
+.todo-container {
+  max-width: 600px;
+  margin: 100px auto 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #334e68;
+}
+
+/* Form layout for adding a new todo */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-form input[type="text"],
+.todo-form input[type="time"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 12px;
+}
+
+.todo-form button {
+  padding: 8px 16px;
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.todo-form button:hover {
+  background: #2563eb;
+}
+
+/* List of todo items */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

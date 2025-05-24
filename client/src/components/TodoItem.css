@@ -1,0 +1,102 @@
+/* client/src/components/TodoItem.css */
+
+.todo-item-card {
+  margin-top:15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.todo-item-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Completed items: border blinks green only */
+.todo-item-card.completed {
+  animation: borderBlinkGreen 1.5s infinite;
+}
+
+/* Overdue items: border blinks red only */
+.todo-item-card.overdue {
+  animation: borderBlinkRed 1.5s infinite;
+}
+
+@keyframes borderBlinkGreen {
+  0%, 100% { border-color: #38a169; }
+  50% { border-color: transparent; }
+}
+
+@keyframes borderBlinkRed {
+  0%, 100% { border-color: #e53e3e; }
+  50% { border-color: transparent; }
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.todo-text {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-text span {
+  font-size: 1rem;
+}
+
+.todo-time {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-top: 4px;
+}
+
+.edit-input,
+.edit-time {
+  padding: 6px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button {
+  background: #3182ce;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-button:hover {
+  background: #2b6cb0;
+}
+
+.delete-button {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-button:hover {
+  background: #c53030;
+}

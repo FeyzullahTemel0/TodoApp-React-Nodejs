@@ -1,0 +1,60 @@
+/* client/src/pages/Tasks.css */
+
+.tasks-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.tasks-container h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+.tasks-container .list-create {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tasks-container .list-create input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+}
+
+.tasks-container .list-create button {
+  padding: 8px 16px;
+  background: #38bdf8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tasks-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tasks-container li {
+  padding: 8px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-container li button {
+  padding: 4px 8px;
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
